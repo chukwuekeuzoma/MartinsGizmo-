@@ -1,0 +1,15 @@
+.space{
+    padding-top:8px;
+    margin-right:20px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+.bar{
+    width: 100%;
+    z-index:10;
+}
+.linkcolour{
+    color:black;
+    text-decoration: none;
+}

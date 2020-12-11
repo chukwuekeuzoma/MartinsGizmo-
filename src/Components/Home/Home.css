@@ -1,0 +1,18 @@
+img{
+    float: right;
+    margin-top:5px;
+}
+.Homeabackground{
+  background-color: #1c528a;
+  height: 311px;
+ 
+}
+.properties{
+ position: absolute;
+ top:110px;
+ left:30px;
+ background-size:30%;
+ font-size:30px;
+ font-weight: bolder;
+ color: white;
+}

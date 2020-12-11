@@ -1,0 +1,5 @@
+.flex_input{
+    display: flex;
+    justify-content: center;
+    box-sizing: inherit;
+}
