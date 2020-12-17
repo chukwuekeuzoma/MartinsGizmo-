@@ -4,21 +4,26 @@ import Homeimage from "../Images/homeimg.svg"
 import Search from "../Search/search"
 
 
-const Home = () =>{
-    return(
-<div>
-     <div style={{position:"relative",marginTop:"0px", boxSizing:"inherit"}}>
-            <div className=" Homeabackground">
-               <img className="responsive-img" src={Homeimage} alt="martimg"/>
-            </div>
-            <div className="properties">
-                properties
-                 </div>
-            <div>
-              <Search />
-            </div>
-        </div>
-</div>)
-}
 
+const Home = () => {
+    return (
+        <div>
+            <div style={{ position: "relative", marginTop: "0px", boxSizing: "inherit" }} className="Home_animation">
+                <div className=" Homeabackground">
+                    <img className="responsive-img" src={Homeimage} alt="martimg" />
+                </div>
+                <div className="properties">
+                    properties
+                 </div>
+                <div className="search_animation">
+                    <Search />
+                </div>
+            </div>
+        </div>)
+}
 export default Home;
+
+
+
+
+

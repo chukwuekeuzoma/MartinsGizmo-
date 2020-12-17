@@ -6,6 +6,7 @@ import './App.css';
 import React from "react"
 import homeLayout from "./Components/Layouts/homeLayout"
 import dashBoardLayout from "./Components/Layouts/dashBoardLayout"
+import Sidebar from "./Components/SideBar/Sidebar"
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <RouteWithLayout Layout={homeLayout} exact path="/" Component={Home}/>
           <RouteWithLayout Layout={homeLayout}  path="/about" Component={About}/>
           <RouteWithLayout Layout={dashBoardLayout}  path="/Dashboard" Component={Dashboard}/>
+          <RouteWithLayout  Layout={dashBoardLayout} path="/sidebar" Component={Sidebar}/>
         </Switch>
       </div>
        

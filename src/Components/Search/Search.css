@@ -3,3 +3,17 @@
     justify-content: center;
     box-sizing: inherit;
 }
+.button_enter{
+    opacity:0.01;
+    transform: translate(0, -10px);
+    transition:  4000ms 4000ms ease-in;
+ 
+   
+  }
+  .button_enter_active{
+     opacity:1;
+     transform: translate(0, 0);
+     transition:  4000ms 4000ms ease-in;
+ 
+  }
+

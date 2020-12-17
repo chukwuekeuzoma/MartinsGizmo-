@@ -1,0 +1,42 @@
+.display_flex{
+    display:flex;
+    /* box-sizing: inherit; */
+}
+.nav_two{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-top: 16px !important;
+    justify-content: space-between !important
+}
+.Dashboard_two{
+    color: #1C528A;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.He{
+    height: 45px;
+    min-width: 45px;
+    width: 45px;
+    background-color: rgb(255, 188, 68);
+    border-color: rgb(255, 188, 68);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.He_main{
+    color: #FFFFFF !important;
+    font-size: 1.5rem !important;
+}
+.linkcolour{
+    color:black;
+    text-decoration: none;
+}
+.content_align{
+   align-items: center;
+   justify-content: center;
+}
+.padding_right_20{
+    padding-right:20px;
+}

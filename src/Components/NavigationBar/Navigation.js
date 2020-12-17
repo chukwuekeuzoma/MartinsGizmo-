@@ -21,11 +21,12 @@ const Navigation = () =>{
                             <div className="space">
                                 <Link to= "/about" className="space">About</Link>
                             </div> 
-                
-                        <Button variant="contained" 
-                             className={classes.Button}> 
-                            <Link className="linkcolour" to="/Dashboard">Dashboard</Link>  
-                        </Button>
+                            <Link className="linkcolour" to="/Dashboard">
+                                <Button variant="contained" 
+                                    className={classes.Button}> 
+                                    Dashboard
+                                </Button>
+                            </Link>  
                     </div>
                 </Toolbar>
             </AppBar>

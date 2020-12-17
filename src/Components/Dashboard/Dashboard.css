@@ -72,13 +72,44 @@
         animation-name:active_tab;
         animation-duration:4s;
 }
-
-
 @keyframes active_tab {
     from {
-      width: 0%;
+        width: 0%;
     }
-  
+    
     to {
-      width: 100%;
-    }}
+        width: 100%;
+    }
+    
+} 
+.Signin_animation{
+    animation-name:Signin_animation;
+    animation-duration:1s;
+}
+@keyframes Signin_animation{
+    from{
+        opacity:0.01;
+        transform: translate(0, 30px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0, 0px);
+    }
+}
+.Register_animation{
+    animation-name:Register_animation;
+    animation-duration:1s;
+}
+@keyframes Register_animation{
+    from{
+        opacity:0.01;
+        transform: translate(0, 30px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0, 0px);
+    }
+}
+
+
+   
