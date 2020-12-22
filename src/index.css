@@ -15,3 +15,14 @@ code {
   color:black;
   text-decoration: none;
 }
+.linkcolourtwo{
+  color:white;
+  text-decoration: none;
+}
+.Dashboard_styling_bac{
+  background-image:url(./Components/Images/patterns.svg),url(./Components/Images/topppaterns.svg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 40% 35%, 10% 17%;
+  background-position: right bottom, right top;
+}

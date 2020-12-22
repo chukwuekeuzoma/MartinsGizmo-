@@ -30,7 +30,7 @@ function SignIn() {
                 </div>
                 <br />
                 <div>
-                  <Link to="/sidebar" className="linkcolour">
+                  <Link to="/SideBarDash" className="linkcolour">
                     <Button className={classes.Button}>Sign in</Button>
                   </Link>
                 </div>

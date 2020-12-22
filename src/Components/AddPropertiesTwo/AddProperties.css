@@ -1,0 +1,37 @@
+.He{
+    height: 45px;
+    min-width: 45px;
+    width: 45px;
+    background-color: rgb(255, 188, 68);
+    border-color: rgb(255, 188, 68);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.He_main{
+    color: #FFFFFF !important;
+    font-size: 1.5rem !important;
+}
+.add_props{
+    color: #1C528A;
+    font-size: 1em;
+    font-weight: bold;
+}
+.display_flex{
+    display:flex;
+    /* box-sizing: inherit; */
+}
+.nav_two{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-top: 16px !important;
+    justify-content: space-between !important
+}
+.align_items{
+    align-items: center;
+}
+.arrow_opacity{
+    opacity:0.5;
+}

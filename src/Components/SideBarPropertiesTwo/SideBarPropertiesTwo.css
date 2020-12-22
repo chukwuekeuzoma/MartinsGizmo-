@@ -40,3 +40,44 @@
 .padding_right_20{
     padding-right:20px;
 }
+.padding_top_40{
+    padding-top:40px;
+}
+.paddding_right_40{
+    padding-right:40px;
+}
+.text_align{
+    text-align: left;
+}
+.table_styling{
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin-right: -12px;
+    margin-left: -12px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.table_styling_coloums{
+    width: 100%;
+    padding: 12px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    opacity:0.7;
+}
+.SBPROPS_animation{
+    animation-name:SBPROPS_animation;
+    animation-duration:1s;
+}
+@keyframes SBPROPS_animation{
+    from{
+        opacity:0.01;
+        transform: translate(0, 30px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0, 0px);
+    }
+}

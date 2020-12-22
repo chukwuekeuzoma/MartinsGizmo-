@@ -1,8 +1,9 @@
 import React from 'react'
 import { Notifications } from '@material-ui/icons';
-import "./SideBarDashBoard.css"
+import "./SideBarDashBoardTwo.css"
 
-export default function Sidebardashboard() {
+
+export default function SideBarDashBoardTwo() {
     return (
         <div>
             <nav className="display_flex nav_two">
@@ -17,6 +18,7 @@ export default function Sidebardashboard() {
                     </span>
                 </div>
             </nav>
+            <div className="Dash_animation">
             <div className="pa-24 pa-top-36">
                 <div className="display_flex show_flex">
                     <div>
@@ -127,6 +129,7 @@ export default function Sidebardashboard() {
                     </div>
 
                 </div>
+            </div>
             </div>
         </div>
     )

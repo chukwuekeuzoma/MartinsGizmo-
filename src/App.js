@@ -6,7 +6,10 @@ import './App.css';
 import React from "react"
 import homeLayout from "./Components/Layouts/homeLayout"
 import dashBoardLayout from "./Components/Layouts/dashBoardLayout"
-import Sidebar from "./Components/SideBar/Sidebar"
+import SideBarDashBoardTwo from "./Components/SideBarDashBoardTwo/SideBarDashBoardTwo"
+import SideBarPropertiesTwo from "./Components/SideBarPropertiesTwo/SideBarPropertiesTwo"
+import AddPropertiesTwo from "./Components/AddPropertiesTwo/AddProperties"
+import SideBarLayout from "./Components/Layouts/SideBarLayout"
 
 
 
@@ -34,14 +37,13 @@ function App() {
           <RouteWithLayout Layout={homeLayout} exact path="/" Component={Home}/>
           <RouteWithLayout Layout={homeLayout}  path="/about" Component={About}/>
           <RouteWithLayout Layout={dashBoardLayout}  path="/Dashboard" Component={Dashboard}/>
-          <RouteWithLayout  Layout={dashBoardLayout} path="/sidebar" Component={Sidebar}/>
+          <RouteWithLayout  Layout={SideBarLayout} exact path="/SideBarDash" Component={SideBarDashBoardTwo}/>
+          <RouteWithLayout  Layout={SideBarLayout} path="/SideBarProps" Component={SideBarPropertiesTwo}/>
+          <RouteWithLayout  Layout={SideBarLayout} path="/AddProps" Component={AddPropertiesTwo}/>
         </Switch>
       </div>
-       
     </BrowserRouter>
-   
-     
   )
 }
-
 export default App;
+
