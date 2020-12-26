@@ -1,6 +1,6 @@
 .display_flex{
     display:flex;
-    /* box-sizing: inherit; */
+    justify-content: center;
 }
 
 .nav_two{
@@ -37,8 +37,6 @@
    padding-top:36px;
 }
 .flex_wrap{
-    /* flex-wrap: wrap; */
-    /* flex: 1 1 auto; */
     margin-right: -12px;
     margin-left: -12px;
 }
@@ -137,56 +135,6 @@
 }
 .width_100{
     width:100%;
-}
-@media screen and (max-width:1090px) {
-.show_flex{
-    flex-wrap: wrap;
-}
-.col{
-   flex: 1 1 auto;
-}
-.card_styling_general{
-    height: 240px;
-    border-radius: 9px;
-    position: relative;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    padding:10px;
-   
-    flex-grow:1;
-}
-.card_styling_blue{
-    height: 240px;
-    border-radius: 9px;
-    position: relative;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    padding:10px;
-    
-    flex-grow:1;
-}
-.flex_wrap{
-    /* flex-wrap: wrap; */
-    /* flex: 1 1 auto; */
-    margin-right: -12px;
-    margin-left: -12px;
-    width: 80vw;
-}
-.section_two_div{
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 74vh;
-    padding: 20px !important;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    min-width:33.3%;
-    width:70vw;
-}
-
 }
 .Dash_animation{
     animation-name:Dash_animation;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SideBarTwo from "../../Components/SideBarTwo/SideBarTwo"
+import "./Layout.css"
 
 
 
@@ -9,7 +10,7 @@ export default class SideBarLayout extends Component {
         return (
             <div className="Dashboard_styling_bac">
                  <SideBarTwo/>
-                 <div style={{marginLeft:"17%",width:"80%"}}>
+                 <div className="margin_left">
                     {this.props.children}
                  </div>
                   

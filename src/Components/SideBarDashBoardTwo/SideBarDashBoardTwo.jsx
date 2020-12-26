@@ -1,6 +1,7 @@
 import React from 'react'
 import { Notifications } from '@material-ui/icons';
 import "./SideBarDashBoardTwo.css"
+import Grid from '@material-ui/core/Grid';
 
 
 export default function SideBarDashBoardTwo() {
@@ -19,118 +20,107 @@ export default function SideBarDashBoardTwo() {
                 </div>
             </nav>
             <div className="Dash_animation">
-            <div className="pa-24 pa-top-36">
-                <div className="display_flex show_flex">
-                    <div>
-                        <div>
-                            <b>Welcome, Martins</b>
-                        </div>
-                        <div className="pa_top-25 flex_wrap display_flex">
-                            {/* <Grid container spacing={3}>
-                                        <Grid item xs={6}> */}
-                            <div className="col">
-                                <div className="card_styling_blue card_blue_image">
-                                    <div><b>0</b></div>
-                                    <div className="number_of_prop"><b>total number of properties</b></div>
-                                </div>
+                <div className="pa-24 pa-top-36">
+
+
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} sm={4} md={3} >
+                            <div className="card_styling_blue card_blue_image">
+                                <div><b>0</b></div>
+                                <div className="number_of_prop"><b>total number of properties</b></div>
                             </div>
-                            <div className="col margin_left_two">
-                                <div className="card_red_image card_styling_red card_styling_general">
-                                    <div><b>0</b></div>
-                                    <div className="number_of_prop"><b>number of solid properties</b></div>
-                                </div>
+
+                        </Grid>
+                        <Grid item xs={12} sm={4} md={3}  >
+                            <div className="card_red_image card_styling_red card_styling_general">
+                                <div><b>0</b></div>
+                                <div className="number_of_prop"><b>number of solid properties</b></div>
                             </div>
-                            <div className="col margin_left_two">
-                                <div className="card_purple_image card_styling_purple card_styling_general">
-                                    <div><b>0</b></div>
-                                    <div className="number_of_prop"><b>number of bought properties</b></div>
-                                </div>
+                        </Grid>
+                        <Grid item xs={12} sm={4} md={3} >
+                            <div className="card_purple_image card_styling_purple card_styling_general">
+                                <div><b>0</b></div>
+                                <div className="number_of_prop"><b>number of bought properties</b></div>
                             </div>
-                            {/* </Grid>
-                                    </Grid> */}
-                        </div>
-                    </div>
-                    <div style={{ marginLeft: "20px", marginTop: "10px" }}>
-                        <div className="section_two_div">
-                            {/* <Grid container spacing={3}>
-                                        <Grid item xs={6}> */}
-                            <div className="display_flex">
-                                <div>
-                                    <Notifications className="notification" />
-                                </div>
-                                <div className="normanl_font_size">
-                                    Notification
+                        </Grid>
+                        <Grid item xs={12} sm={8} md={6} >
+                            <div className="section_two_div">
+
+                                <div className="display_flex">
+                                    <div>
+                                        <Notifications className="notification" />
+                                    </div>
+                                    <div className="normanl_font_size">
+                                        Notification
                                                 </div>
-                            </div>
-                            <div className="display_flex pa_top_28">
-                                <div className="He">
-                                    <span className="He_main">
-                                        HE
+                                </div>
+                                <div className="display_flex pa_top_28">
+                                    <div className="He">
+                                        <span className="He_main">
+                                            HE
                                                     </span>
-                                </div>
-                                <div>
-                                    <span className="normanl_font_size">Martins added your house to favourite</span>
-                                    <div className="ten_min">10 mins ago</div>
+                                    </div>
+                                    <div>
+                                        <span className="normanl_font_size">Martins added your house to favourite</span>
+                                        <div className="ten_min">10 mins ago</div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="display_flex pa_top_28">
-                                <div className="He">
-                                    <span className="He_main">
-                                        HE
+                                <div className="display_flex pa_top_28">
+                                    <div className="He">
+                                        <span className="He_main">
+                                            HE
                                                     </span>
-                                </div>
-                                <div>
-                                    <span className="normanl_font_size">Martins added your house to favourite</span>
-                                    <div className="ten_min">10 mins ago</div>
+                                    </div>
+                                    <div>
+                                        <span className="normanl_font_size">Martins added your house to favourite</span>
+                                        <div className="ten_min">10 mins ago</div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="display_flex pa_top_28">
-                                <div className="He">
-                                    <span className="He_main">
-                                        HE
+                                <div className="display_flex pa_top_28">
+                                    <div className="He">
+                                        <span className="He_main">
+                                            HE
                                                     </span>
-                                </div>
-                                <div>
-                                    <span className="normanl_font_size">Martins added your house to favourite</span>
-                                    <div className="ten_min">10 mins ago</div>
+                                    </div>
+                                    <div>
+                                        <span className="normanl_font_size">Martins added your house to favourite</span>
+                                        <div className="ten_min">10 mins ago</div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="display_flex pa_top_28">
-                                <div className="He">
-                                    <span className="He_main">
-                                        HE
+                                <div className="display_flex pa_top_28">
+                                    <div className="He">
+                                        <span className="He_main">
+                                            HE
                                                     </span>
-                                </div>
-                                <div>
-                                    <span className="normanl_font_size">Martins added your house to favourite</span>
-                                    <div className="ten_min">10 mins ago</div>
+                                    </div>
+                                    <div>
+                                        <span className="normanl_font_size">Martins added your house to favourite</span>
+                                        <div className="ten_min">10 mins ago</div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="display_flex pa_top_28">
-                                <div className="He">
-                                    <span className="He_main">
-                                        HE
+                                <div className="display_flex pa_top_28">
+                                    <div className="He">
+                                        <span className="He_main">
+                                            HE
                                                     </span>
-                                </div>
-                                <div>
-                                    <span className="normanl_font_size">Martins added your house to favourite</span>
-                                    <div className="ten_min">10 mins ago</div>
+                                    </div>
+                                    <div>
+                                        <span className="normanl_font_size">Martins added your house to favourite</span>
+                                        <div className="ten_min">10 mins ago</div>
 
+                                    </div>
                                 </div>
+
                             </div>
-                            {/* </Grid>
-                                    </Grid> */}
-                        </div>
-
-                    </div>
-
+                        </Grid>
+                    </Grid>
                 </div>
             </div>
-            </div>
         </div>
+
     )
 }

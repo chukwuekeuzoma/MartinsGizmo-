@@ -1,0 +1,11 @@
+.margin_left{
+    margin-left:17%;
+    width:80%;
+}
+@media screen and (max-width:1024px){
+    .margin_left{
+         margin-left:0%;
+         width:100%;
+        
+    }
+}

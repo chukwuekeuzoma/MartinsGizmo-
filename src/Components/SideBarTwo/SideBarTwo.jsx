@@ -9,7 +9,8 @@ export default class SideBarTwo extends Component {
         return (
             
             <Fragment >
-                <div className="display_flex">
+             
+                <div className="side_display_flex">
                     <nav className="nav_one">
                         <div>
                             <h2>Martins</h2>
@@ -49,6 +50,39 @@ export default class SideBarTwo extends Component {
                         </ul>
                     </nav>
                 </div>
+                <div className="second">
+                    <div>
+                        <Link to="SideBarDash" className="linkcolourtwo">
+                                <div className="list icons_classes link_second">
+                                    <Dashboard className="icons" />
+                                    <span className="font_size">Dashboard</span>
+                                </div>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to ="/SideBarProps" className="linkcolourtwo">
+                            <div className="list icons_classes link_second">
+                                <AccountBalance className="icons" />
+                                <span className="font_size">My properties </span>
+                            </div>
+                        </Link>
+                    </div>
+                    <div>
+                       <div className="list icons_classes link_second" >
+                            <Settings className="icons" />
+                            <span className="font_size">Settings</span>
+                        </div>
+                    </div>
+                    <div>
+                        <Link  to ="/" className="linkcolourtwo">
+                            <div className="list icons_classes link_second">
+                                <PowerSettingsNew className="icons" />
+                                <span className="font_size">log out </span>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+             
              </Fragment>
         
         )

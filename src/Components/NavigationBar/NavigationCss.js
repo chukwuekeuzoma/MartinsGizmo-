@@ -13,7 +13,10 @@ import { makeStyles } from '@material-ui/core/styles'
       display:"flex",
       marginRight:"50px",
       fontSize:"12px",
-      fontWeight:"bolder"
+      fontWeight:"bolder",
+      '@media screen and (max-width:400px)' : {
+        marginRight:"5px"
+      },
     },
     Button:{
         fontSize:"12px",fontWeight:"bold",marginTop:"1px",borderRadius:"5px",

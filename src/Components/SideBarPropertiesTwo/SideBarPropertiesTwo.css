@@ -81,3 +81,22 @@
         transform: translate(0, 0px);
     }
 }
+@media screen and (max-width:450px){
+    .Dashboard_two{
+        color: #1C528A;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    .nav_two{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 16px !important;
+        justify-content: space-between !important
+    }
+    .paddding_right_40{
+        padding-right:0px;
+    }
+    .table_styling_coloums{
+        padding: 10px; 
+    }
+  }

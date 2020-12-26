@@ -35,3 +35,49 @@
 .arrow_opacity{
     opacity:0.5;
 }
+.form{
+    width:100%;
+    flex-grow:1;
+}
+.form_animation{
+    animation-name:form_animation;
+    animation-duration:1s;
+}
+@keyframes form_animation{
+    from{
+        opacity:0.01;
+        transform: translate(0, 30px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0, 0px);
+    }
+}
+input[type="file"]{
+   display: none;
+}
+.addProps_DiplayFlex{
+    display:flex;
+}
+.addProps_SpaceBtw{
+    justify-content:space-between;
+}
+.mar-top{
+    margin-top:20px;
+}
+.aln_con{
+    align-content: flex-end;
+}
+.add_image_props{
+    font-weight: bolder;
+    opacity:0.5;
+
+}
+.margin_bottom{
+  margin-bottom:50px;
+}
+@media screen and (max-width:1024px){
+  .addProps_DiplayFlex{
+      margin-bottom:80px;
+  }
+}

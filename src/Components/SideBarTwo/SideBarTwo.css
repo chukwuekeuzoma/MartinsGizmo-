@@ -2,11 +2,13 @@
 .list_style{
     list-style: none;
 }
-.display_flex{
+.side_display_flex{
     display:flex;
     /* box-sizing: inherit; */
 }
-
+.second{
+    display:none;
+}
 .nav_one{
     background-color:#1c528a;
     height:100vh;
@@ -71,4 +73,51 @@ h2{
   background-size: 40% 35%, 10% 17%;
   background-position: right bottom, right top;
 }
+@media screen and (max-width:1024px){
+    .side_display_flex{
+        display:none;
+        box-sizing: inherit;
+    }
+    .second{
+        display: block;
+        position: fixed;
+        display: flex;  
+        height:55px;
+        background-color:#1c528a;
+        bottom:0px;
+        width:100%;
+        overflow-x: auto;
+        justify-content:space-around;
+        z-index:1;
+    }
+    .link_second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        min-width:50px;
+    }
+        
+    .list{
+        border-radius: 27px;
+        padding: 10px !important;
+        margin-left: 0px !important;
+        cursor: pointer;
+    }
+    .icons_classes{
+       
+        display:flex;
+        
+    }
+    .font_size{
+        font-size: 0.8em;
+        padding-left:0px;
+    }
+}
+
+
+
 

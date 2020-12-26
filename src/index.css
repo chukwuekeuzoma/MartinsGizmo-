@@ -26,3 +26,6 @@ code {
   background-size: 40% 35%, 10% 17%;
   background-position: right bottom, right top;
 }
+.arrow_opacity{
+  opacity:0.5;
+}

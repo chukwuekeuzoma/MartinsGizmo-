@@ -7,6 +7,9 @@
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
 }
+.width_50{
+ width:70%;
+}
 
 .box-two{
     flex: 1 1 auto;
@@ -111,5 +114,15 @@
     }
 }
 
-
+@media screen and (max-width:700px){
+    .section_box_one{
+        display:none;
+    }
+    .section_box_two{
+        width:100%;
+    }
+    .width_50{
+        width:80%;
+    }
+}
    

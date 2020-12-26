@@ -4,12 +4,15 @@ import "./Dashboard.css"
 import { withStyles } from '@material-ui/core/styles'
 import Register from "../Form/Register/Register"
 import SiginIn from "../Form/SiginIn/SignIn"
+import { Link } from "react-router-dom"
+import { ArrowBack } from '@material-ui/icons';
 
 
 
 const useStyles = () => ({
   section_box_two_button: {
     width: "100%",
+
     fontSize: "0.7em",
     "&:active": {
       color: "#1c528a !important",
@@ -55,40 +58,52 @@ class Dashboard extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className="box">
-        <div className=" box-two">
-          <section className="section_box_one">
-            <div className="martins">Martins</div>
-            <div className="martins_second">
-              Search for beautiful houses for sale or rent and also put up your houses
-              for sale or rent all around Nigeria
+      <div style={{ position: "relative" }}>
+
+
+        <div className="box">
+
+          <div className=" box-two">
+            <section className="section_box_one">
+              <div className="martins">Martins</div>
+              <div className="martins_second">
+                Search for beautiful houses for sale or rent and also put up your houses
+                for sale or rent all around Nigeria
                   </div>
-          </section>
-          <section className="section_box_two">
-            <div className="welcome">Welcome</div>
-            <div style={{ width: "60%", display: "flex", justifyContent: 'center', }}>
-              <div style={{ width: "30%" }}>
-                <Button className={classes.section_box_two_button}
-                  onClick={() => { this.setState({ CurrentForm: true }) }}>Sign in</Button>
-                <div className={`active_indicatior`}></div>
-              </div>
-              <div style={{ width: "30%" }}>
-                <Button className={classes.section_box_two_button}
-                  onClick={() => { this.setState({ CurrentForm: false }) }}>Register</Button>
-                <div className={`active_indicatior`}></div>
-              </div>
+            </section>
+            <div style={{ paddingRight: "0px", marginTop: "0px", position: "absolute" }}>
+              <Link to="/" className="linkcolour">
+                <ArrowBack style={{ fontSize: "30px" }} />
+              </Link>
             </div>
-            <div style={{ width: "50%", marginTop: "30px" }}>
-              {this.state.CurrentForm ?
-                <div className="Signin_animation">
-                  <SiginIn />
+            <section className="section_box_two">
+
+
+              <div className="welcome">Welcome</div>
+              <div style={{ width: "60%", display: "flex", justifyContent: 'center', }}>
+                <div style={{ width: "30%" }}>
+                  <Button className={classes.section_box_two_button}
+                    onClick={() => { this.setState({ CurrentForm: true }) }}>Sign in</Button>
+                  <div className={`active_indicatior`}></div>
                 </div>
-                :
-                <div className="Register_animation">
-                  <Register />
-                </div>}
-            </div>
-          </section>
+                <div style={{ width: "30%" }}>
+                  <Button className={classes.section_box_two_button}
+                    onClick={() => { this.setState({ CurrentForm: false }) }}>Register</Button>
+                  <div className={`active_indicatior`}></div>
+                </div>
+              </div>
+              <div style={{marginTop: "30px"}} className="width_50">
+                {this.state.CurrentForm ?
+                  <div className="Signin_animation">
+                    <SiginIn />
+                  </div>
+                  :
+                  <div className="Register_animation">
+                    <Register />
+                  </div>}
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     )

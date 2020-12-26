@@ -47,4 +47,12 @@ img{
       transform: translate(0, 0);
   }
 }
+@media screen and (max-width:400px){
+  img{
+    float: right;
+    size: cover;
+}
+      
+  
+}
     

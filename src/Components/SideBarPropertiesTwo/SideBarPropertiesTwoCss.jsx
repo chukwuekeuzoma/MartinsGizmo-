@@ -8,8 +8,11 @@ const useStyles = makeStyles({
       backgroundColor: "#fbb034",
       backgroundImage: "linear-gradient(315deg, #fbb034 0%, #ffdd00 74%)"
     },
-    }
-  });
+    '@media screen and (max-width:450px)' : {
+      padding:"10px"
+    },
+  }
+});
 
 
 export  {useStyles};
