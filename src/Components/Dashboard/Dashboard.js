@@ -50,12 +50,12 @@ const useStyles = () => ({
 })
 
 class Dashboard extends Component {
-  
   constructor(){
   state = {
     CurrentForm: true
   };
  }
+  
  
   render() {
     const { classes } = this.props;
