@@ -12,13 +12,13 @@ import { ArrowBack } from '@material-ui/icons';
 const useStyles = () => ({
   section_box_two_button: {
     width: "100%",
-
     fontSize: "0.7em",
-    "&:active": {
-      color: "#1c528a !important",
-      transition: "transform 2s",
-    }
   },
+  active:{
+    color: "#1c528a !important",
+    transition: "transform 2s",
+  },
+
   martins: {
     height: "4px",
     backgroundColor: "#1c528a",
@@ -49,16 +49,18 @@ const useStyles = () => ({
   },
 })
 
+// var mainActive= document.getElementById("button");
+// mainActive.addEvent
+
 class Dashboard extends Component {
-  constructor(){
   state = {
     CurrentForm: true
   };
- }
-  
+
  
   render() {
     const { classes } = this.props;
+    
     return (
       <div style={{ position: "relative" }}>
 
@@ -83,17 +85,17 @@ class Dashboard extends Component {
 
               <div className="welcome">Welcome</div>
               <div style={{ width: "60%", display: "flex", justifyContent: 'center', }}>
-                <div style={{ width: "30%" }}>
-                  <Button className={classes.section_box_two_button}
+                <div style={{ width: "30%" }} id="button">
+                  <Button className={`${classes.section_box_two_button}  ${this.state.CurrentForm?classes.active:null}`}
                     onClick={() => { this.setState({ CurrentForm: true }) }}>Sign in</Button>
-                  <div className={`active_indicatior`}></div>
+                  <div className={this.state.CurrentForm?"active_indicatior": null}></div>
                 </div>
-                <div style={{ width: "30%" }}>
-                  <Button className={classes.section_box_two_button}
+                <div style={{ width: "30%"}} id="button">
+                  <Button className={`${classes.section_box_two_button}  ${this.state.CurrentForm?null:classes.active}`}
                     onClick={() => { this.setState({ CurrentForm: false }) }}>Register</Button>
-                  <div className={`active_indicatior`}></div>
+                  <div className={this.state.CurrentForm? null:"active_indicatior"}></div>
                 </div>
-              </div>
+              </div> 
               <div style={{marginTop: "30px"}} className="width_50">
                 {this.state.CurrentForm ?
                   <div className="Signin_animation">
