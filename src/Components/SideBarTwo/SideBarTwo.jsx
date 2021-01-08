@@ -4,7 +4,40 @@ import "./SideBarTwo.css"
 import { AccountBalance, Dashboard, Settings, PowerSettingsNew } from '@material-ui/icons';
 import {Link} from "react-router-dom"
 
+// var active = document.getElementById()
+
 export default class SideBarTwo extends Component {
+   constructor(){
+       super();
+       this.state ={
+           change:"General"
+       };
+   }
+   
+   Dash = () => {
+    this.setState({
+      change:"Dash"
+     })
+    }
+
+   Account = () =>{
+       this.setState({
+           change:"Account"
+       })
+    }
+    
+    Power = () =>{
+        this.setState({
+            change:"Power"
+        })
+     }
+
+    setting = () =>{
+        this.setState({
+            change:"setting"
+        })
+    }
+
     render() {
         return (
             
@@ -18,32 +51,32 @@ export default class SideBarTwo extends Component {
                         <ul className="list_style">
                             <li className="margin_top">
                             <Link to="SideBarDash" className="linkcolourtwo">
-                                <div className="list icons_classes">
-                                    <Dashboard className="icons" />
-                                    <span className="font_size">Dashboard</span>
+                                <div onClick={this.Dash} className={`${this.state.change === "Dash"?"list_active icons_classes":"list icons_classes"}`}>
+                                    <Dashboard />
+                                    <span className={`${this.state === "Dash"?"font_size":"font_size"}`}>Dashboard</span>
                                 </div>
                             </Link>
                             </li>
 
-                            <li className="margin_top">
+                            <li className="margin_top" >
                             <Link to ="/SideBarProps" className="linkcolourtwo">
-                                <div className="list icons_classes">
-                                    <AccountBalance className="icons" />
-                                    <span className="font_size">My properties </span>
+                                <div onClick={this.Account} className={`${this.state.change === "Account"?"list_active icons_classes":"list icons_classes"}`}>
+                                  <AccountBalance/> 
+                                    <span className={`${this.state === "Account"?"font_size":"font_size"}`}>My properties</span>
                                 </div>
                             </Link>
                             </li>
                             <li className="margin_top">
-                                <div className="list icons_classes" >
-                                    <Settings className="icons" />
-                                    <span className="font_size">Settings</span>
+                                <div onClick={this.setting} className={`${this.state.change === "setting"?"list_active icons_classes":"list icons_classes"}`}>
+                                    <Settings/>
+                                    <span className={`${this.state === "setting"?"font_size":"font_size"}`}>Settings</span>
                                 </div>
                             </li>
                             <li className="margin_top icons_classes">
                                <Link  to ="/" className="linkcolourtwo">
-                                    <div className="list icons_classes">
-                                        <PowerSettingsNew className="icons" />
-                                        <span className="font_size">log out </span>
+                                    <div onClick={this.Power} className={`${this.state.change === "Power"?"list_active icons_classes":"list icons_classes"}`}>
+                                        <PowerSettingsNew/>
+                                        <span className={`${this.state === "Power"?"font_size":"font_size"}`}>log out </span>
                                     </div>
                                </Link>
                             </li>
@@ -54,7 +87,7 @@ export default class SideBarTwo extends Component {
                     <div>
                         <Link to="SideBarDash" className="linkcolourtwo">
                                 <div className="list icons_classes link_second">
-                                    <Dashboard className="icons" />
+                                    <Dashboard/>
                                     <span className="font_size">Dashboard</span>
                                 </div>
                         </Link>
@@ -62,21 +95,21 @@ export default class SideBarTwo extends Component {
                     <div>
                         <Link to ="/SideBarProps" className="linkcolourtwo">
                             <div className="list icons_classes link_second">
-                                <AccountBalance className="icons" />
+                                <AccountBalance/>
                                 <span className="font_size">My properties </span>
                             </div>
                         </Link>
                     </div>
                     <div>
                        <div className="list icons_classes link_second" >
-                            <Settings className="icons" />
+                            <Settings/>
                             <span className="font_size">Settings</span>
                         </div>
                     </div>
                     <div>
                         <Link  to ="/" className="linkcolourtwo">
                             <div className="list icons_classes link_second">
-                                <PowerSettingsNew className="icons" />
+                                <PowerSettingsNew/>
                                 <span className="font_size">log out </span>
                             </div>
                         </Link>

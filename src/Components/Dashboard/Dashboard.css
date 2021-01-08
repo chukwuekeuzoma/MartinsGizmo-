@@ -73,7 +73,7 @@
         background-color:#1c528a;
         border-radius:20px;
         animation-name:active_tab;
-        animation-duration:4s;
+        animation-duration:1s;
 }
 @keyframes active_tab {
     from {

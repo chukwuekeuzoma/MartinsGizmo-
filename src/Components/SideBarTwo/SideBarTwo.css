@@ -50,11 +50,15 @@ h2{
     color: #000;
     opacity:0.7;
 }
-.list:active{
+.list_active{
     background-color: #f5fffa;
-    color: #000;
+    color:#1c528a;
+    border-radius: 27px;
+    padding: 12px !important;
+    margin-left: -20px !important;
+    cursor: pointer;
 }
-.icons:active{
+.icons_active{
    color:yellow;
 }
 .icons_classes{
@@ -82,7 +86,7 @@ h2{
         display: block;
         position: fixed;
         display: flex;  
-        height:55px;
+        height:4rem;
         background-color:#1c528a;
         bottom:0px;
         width:100%;

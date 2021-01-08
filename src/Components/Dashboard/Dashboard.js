@@ -49,14 +49,15 @@ const useStyles = () => ({
   },
 })
 
-// var mainActive= document.getElementById("button");
-// mainActive.addEvent
+ 
 
 class Dashboard extends Component {
-  state = {
+  constructor(){
+    super();
+  this.state = {
     CurrentForm: true
   };
-
+  }
  
   render() {
     const { classes } = this.props;
