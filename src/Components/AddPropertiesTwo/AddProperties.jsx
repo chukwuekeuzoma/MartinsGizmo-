@@ -4,8 +4,10 @@ import {ArrowBack,Add} from '@material-ui/icons';
 import "./AddProperties.css"
 import Grid from '@material-ui/core/Grid';
 import {TextField, Button } from "@material-ui/core"
+import {useStyles} from "../SideBarPropertiesTwo/SideBarPropertiesTwoCss"
 
 export default function AddProperties() {
+    const classes = useStyles()
     return (
         <div>
             <div className="display_flex nav_two margin_bottom">
@@ -157,8 +159,8 @@ export default function AddProperties() {
                                 </label>
                             </div>
                         </div>
-                        <div className="addProps_DiplayFlex aln_con">
-                           <Button style={{fontSize: "0.7em",color:"#1c528a",fontWeight:"bolder"}}>
+                        <div className="addProps_DiplayFlex aln_con btn_height">
+                           <Button className={classes.Button}>
                                Add property
                            </Button>
                         </div>

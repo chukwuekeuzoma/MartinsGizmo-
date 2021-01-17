@@ -59,7 +59,7 @@ h2{
     cursor: pointer;
 }
 .icons_active{
-   color:yellow;
+   color:yellow !important;
 }
 .icons_classes{
     align-items: center;
@@ -102,10 +102,10 @@ h2{
         flex-grow: 1;
         overflow: hidden;
         white-space: nowrap;
-        min-width:50px;
+        min-width:30px;
     }
-        
-    .list{
+         
+     .list{
         border-radius: 27px;
         padding: 10px !important;
         margin-left: 0px !important;
@@ -116,11 +116,14 @@ h2{
         display:flex;
         
     }
+    .icons_active{
+        color:yellow !important;
+     }
     .font_size{
         font-size: 0.8em;
         padding-left:0px;
-    }
-}
+    } 
+} 
 
 
 

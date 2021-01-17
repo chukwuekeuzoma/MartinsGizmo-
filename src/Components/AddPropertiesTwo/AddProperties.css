@@ -76,6 +76,9 @@ input[type="file"]{
 .margin_bottom{
   margin-bottom:50px;
 }
+.btn_height{
+    height:50px;
+}
 @media screen and (max-width:1024px){
   .addProps_DiplayFlex{
       margin-bottom:80px;

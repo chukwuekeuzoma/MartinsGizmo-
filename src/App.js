@@ -10,6 +10,8 @@ import SideBarDashBoardTwo from "./Components/SideBarDashBoardTwo/SideBarDashBoa
 import SideBarPropertiesTwo from "./Components/SideBarPropertiesTwo/SideBarPropertiesTwo"
 import AddPropertiesTwo from "./Components/AddPropertiesTwo/AddProperties"
 import SideBarLayout from "./Components/Layouts/SideBarLayout"
+// import Register from "./Components/Form/Register/Register"
+import {AuthProvider} from "./Components/Authentication/AuthContext"
 
 
 
@@ -31,7 +33,9 @@ function RouteWithLayout({Layout, Component, ...rest}){
 
 function App() {
   return (
+    
     <BrowserRouter>
+    <AuthProvider>
       <div>
         <Switch>
           <RouteWithLayout Layout={homeLayout} exact path="/" Component={Home}/>
@@ -40,9 +44,12 @@ function App() {
           <RouteWithLayout  Layout={SideBarLayout} exact path="/SideBarDash" Component={SideBarDashBoardTwo}/>
           <RouteWithLayout  Layout={SideBarLayout} path="/SideBarProps" Component={SideBarPropertiesTwo}/>
           <RouteWithLayout  Layout={SideBarLayout} path="/AddProps" Component={AddPropertiesTwo}/>
+          {/* <RouteWithLayout Layout={dashBoardLayout}  path="/register" Component={ Register}/> */}
         </Switch>
       </div>
+      </AuthProvider>
     </BrowserRouter>
+    
   )
 }
 export default App;

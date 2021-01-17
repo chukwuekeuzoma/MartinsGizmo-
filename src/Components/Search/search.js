@@ -14,11 +14,13 @@ const Search = () => {
             className={classes.Textfield}
             variant="outlined"
             label="enter properties"
+            placeholder="enter properties"
           />
           <TextField
             className={classes.Textfield}
             variant="outlined"
             label="enter location of properties(e.g Hill Top avenue)"
+            placeholder="enter location of properties(e.g Hill Top avenue)"
           />
           <Button variant="contained"
             className={classes.Button} style={{ margin: "25px" }}>

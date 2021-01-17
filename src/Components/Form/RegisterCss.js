@@ -21,6 +21,12 @@ const useStyles = makeStyles({
           // 0 3px 1px -2px rgba(0, 0, 0, 0.12)  0 1px 5px 0 rgba(0, 0, 0, 0.2)",
       }
     },
+    l_active:{
+        color: "#1c528a !important",
+        transition: "transform 2s",
+        fontSize:"15px",
+        fontWeight:"bold"
+      },
 
     TextField:{
         width: "100%",

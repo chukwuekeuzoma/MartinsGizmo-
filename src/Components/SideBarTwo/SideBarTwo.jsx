@@ -4,13 +4,16 @@ import "./SideBarTwo.css"
 import { AccountBalance, Dashboard, Settings, PowerSettingsNew } from '@material-ui/icons';
 import {Link} from "react-router-dom"
 
+
 // var active = document.getElementById()
 
 export default class SideBarTwo extends Component {
    constructor(){
        super();
        this.state ={
-           change:"General"
+           change:"General",
+           mobile:""
+           
        };
    }
    
@@ -38,6 +41,36 @@ export default class SideBarTwo extends Component {
         })
     }
 
+    // for mobile screen 
+    MDash = () => {
+        this.setState({
+          mobile:"MDash"
+         })
+    }
+
+    
+   MAccount = () =>{
+      this.setState({
+        mobile:"MAccount"
+      })
+    }
+
+    MPower = () =>{
+        this.setState({
+            mobile:"MPower"
+        })
+    }
+
+    
+    Msetting = () =>{
+        this.setState({
+            mobile:"Msetting"
+        })
+    }
+    
+
+
+
     render() {
         return (
             
@@ -52,7 +85,7 @@ export default class SideBarTwo extends Component {
                             <li className="margin_top">
                             <Link to="SideBarDash" className="linkcolourtwo">
                                 <div onClick={this.Dash} className={`${this.state.change === "Dash"?"list_active icons_classes":"list icons_classes"}`}>
-                                    <Dashboard />
+                                    <Dashboard className={`${this.state.change === "Dash"?"icons_active":null}`}/>
                                     <span className={`${this.state === "Dash"?"font_size":"font_size"}`}>Dashboard</span>
                                 </div>
                             </Link>
@@ -61,21 +94,21 @@ export default class SideBarTwo extends Component {
                             <li className="margin_top" >
                             <Link to ="/SideBarProps" className="linkcolourtwo">
                                 <div onClick={this.Account} className={`${this.state.change === "Account"?"list_active icons_classes":"list icons_classes"}`}>
-                                  <AccountBalance/> 
+                                  <AccountBalance className={`${this.state.change === "Account"?"icons_active":null}`}/> 
                                     <span className={`${this.state === "Account"?"font_size":"font_size"}`}>My properties</span>
                                 </div>
                             </Link>
                             </li>
                             <li className="margin_top">
                                 <div onClick={this.setting} className={`${this.state.change === "setting"?"list_active icons_classes":"list icons_classes"}`}>
-                                    <Settings/>
+                                    <Settings className={`${this.state.change === "setting"?"icons_active":null}`}/>
                                     <span className={`${this.state === "setting"?"font_size":"font_size"}`}>Settings</span>
                                 </div>
                             </li>
                             <li className="margin_top icons_classes">
                                <Link  to ="/" className="linkcolourtwo">
                                     <div onClick={this.Power} className={`${this.state.change === "Power"?"list_active icons_classes":"list icons_classes"}`}>
-                                        <PowerSettingsNew/>
+                                        <PowerSettingsNew  className={`${this.state.change === "Power"?"icons_active":null}`}/>
                                         <span className={`${this.state === "Power"?"font_size":"font_size"}`}>log out </span>
                                     </div>
                                </Link>
@@ -86,30 +119,30 @@ export default class SideBarTwo extends Component {
                 <div className="second">
                     <div>
                         <Link to="SideBarDash" className="linkcolourtwo">
-                                <div className="list icons_classes link_second">
-                                    <Dashboard/>
+                                <div onClick={this.MDash} className={`${this.state.mobile === "MDash"?"icons_classes link_second list_active":"list icons_classes link_second"}`}>
+                                    <Dashboard className={`${this.state.mobile === "MDash"?"icons_active":null}`}/>
                                     <span className="font_size">Dashboard</span>
                                 </div>
                         </Link>
                     </div>
                     <div>
                         <Link to ="/SideBarProps" className="linkcolourtwo">
-                            <div className="list icons_classes link_second">
-                                <AccountBalance/>
+                            <div onClick={this.MAccount} className={`${this.state.mobile === "MAccount"?"icons_classes link_second list_active":"list icons_classes link_second"}`}>
+                                <AccountBalance  className={`${this.state.mobile === "MAccount"?"icons_active":null}`}/>
                                 <span className="font_size">My properties </span>
                             </div>
                         </Link>
                     </div>
                     <div>
-                       <div className="list icons_classes link_second" >
-                            <Settings/>
+                       <div  onClick={this.Msetting} className={`${this.state.mobile === "Msetting"?"icons_classes link_second list_active":"list icons_classes link_second"}`} >
+                            <Settings className={`${this.state.mobile === "Msetting"?"icons_active":null}`} />
                             <span className="font_size">Settings</span>
                         </div>
                     </div>
                     <div>
                         <Link  to ="/" className="linkcolourtwo">
-                            <div className="list icons_classes link_second">
-                                <PowerSettingsNew/>
+                            <div onClick={this.MPower} className={`${this.state.mobile === "MPower"?"icons_classes link_second list_active":"list icons_classes link_second"}`} >
+                                <PowerSettingsNew  className={`${this.state.mobile === "MPower"?"icons_active":null}`} />
                                 <span className="font_size">log out </span>
                             </div>
                         </Link>

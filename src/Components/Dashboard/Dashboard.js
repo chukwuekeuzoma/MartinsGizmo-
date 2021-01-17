@@ -1,71 +1,22 @@
 import { Button } from "@material-ui/core"
-import React, { Component } from "react"
+import React, { useState } from "react"
 import "./Dashboard.css"
-import { withStyles } from '@material-ui/core/styles'
+import { useStyles } from "./DashboardCss"
 import Register from "../Form/Register/Register"
 import SiginIn from "../Form/SiginIn/SignIn"
 import { Link } from "react-router-dom"
 import { ArrowBack } from '@material-ui/icons';
+import {AuthProvider} from "../Authentication/AuthContext"
 
 
 
-const useStyles = () => ({
-  section_box_two_button: {
-    width: "100%",
-    fontSize: "0.7em",
-  },
-  active:{
-    color: "#1c528a !important",
-    transition: "transform 2s",
-  },
-
-  martins: {
-    height: "4px",
-    backgroundColor: "#1c528a",
-    borderRadius: "20px",
-    animationName: "$active_tab",
-    animationDuration: "0.7s",
-  },
-  tab__btn: {
-    color: "#c4c4c4",
-    outline: "none",
-    width: "50%",
-    borderBottom: "3px solid transparent",
-    paddingBottom: "4px"
-  },
-  Register: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "80%"
-  },
-  "@keyframes active_tab": {
-    from: {
-      width: "0%"
-    },
-    to: {
-      width: "100%",
-    }
-  },
-})
-
- 
-
-class Dashboard extends Component {
-  constructor(){
-    super();
-  this.state = {
-    CurrentForm: true
-  };
-  }
- 
-  render() {
-    const { classes } = this.props;
+const Dashboard  = () =>{
+  const classes = useStyles();
+  const [CurrentForm, setCurrentFrom] = useState(true);
     
-    return (
+     return (
+    <AuthProvider>
       <div style={{ position: "relative" }}>
-
-
         <div className="box">
 
           <div className=" box-two">
@@ -87,18 +38,18 @@ class Dashboard extends Component {
               <div className="welcome">Welcome</div>
               <div style={{ width: "60%", display: "flex", justifyContent: 'center', }}>
                 <div style={{ width: "30%" }} id="button">
-                  <Button className={`${classes.section_box_two_button}  ${this.state.CurrentForm?classes.active:null}`}
-                    onClick={() => { this.setState({ CurrentForm: true }) }}>Sign in</Button>
-                  <div className={this.state.CurrentForm?"active_indicatior": null}></div>
+                  <Button className={`${classes.section_box_two_button}  ${CurrentForm?classes.active:null}`}
+                    onClick={() => { setCurrentFrom(true) }}>Sign in</Button>
+                  <div className={CurrentForm?"active_indicatior": null}></div>
                 </div>
                 <div style={{ width: "30%"}} id="button">
-                  <Button className={`${classes.section_box_two_button}  ${this.state.CurrentForm?null:classes.active}`}
-                    onClick={() => { this.setState({ CurrentForm: false }) }}>Register</Button>
-                  <div className={this.state.CurrentForm? null:"active_indicatior"}></div>
+                  <Button className={`${classes.section_box_two_button}  ${CurrentForm?null:classes.active}`}
+                    onClick={() => { setCurrentFrom(false) }}>Register</Button>
+                  <div className={CurrentForm? null:"active_indicatior"}></div>
                 </div>
               </div> 
               <div style={{marginTop: "30px"}} className="width_50">
-                {this.state.CurrentForm ?
+                {CurrentForm?
                   <div className="Signin_animation">
                     <SiginIn />
                   </div>
@@ -111,10 +62,11 @@ class Dashboard extends Component {
           </div>
         </div>
       </div>
+    </AuthProvider>
     )
-  }
+  
 }
-export default withStyles(useStyles)(Dashboard)
+export default Dashboard;
 
 
 
