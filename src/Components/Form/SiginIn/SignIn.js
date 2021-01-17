@@ -79,9 +79,9 @@ function SignIn() {
                 </div>
                 <br />
                 <div>
-                  <Link to="/SideBarDash" className="linkcolour">
+                  {/* <Link to="/SideBarDash" className="linkcolour"> */}
                     <Button className={classes.Button} type="submit">Sign in</Button>
-                  </Link>
+                  {/* </Link> */}
                 </div>
             </form>
             {error && <Alert severity="error">{error}</Alert>}
