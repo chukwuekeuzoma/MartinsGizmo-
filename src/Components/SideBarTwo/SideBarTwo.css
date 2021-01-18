@@ -51,9 +51,7 @@ h2{
     opacity:0.7;
 }
 .list_active{
-    background-color: #f5fffa;
-    color:#1c528a;
-    border-radius: 27px;
+    color:yellow ;
     padding: 12px !important;
     margin-left: -20px !important;
     cursor: pointer;
