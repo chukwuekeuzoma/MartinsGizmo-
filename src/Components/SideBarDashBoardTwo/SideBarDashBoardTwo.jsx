@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 
 export default function SideBarDashBoardTwo() {
     return (
-        <div>
+        <div> 
             <nav className="display_flex nav_two">
                 <div className="display_flex Dashboard_two">
                     <span>

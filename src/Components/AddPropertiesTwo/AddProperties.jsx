@@ -146,10 +146,10 @@ export default function AddProperties() {
                         </Grid>
                   </form>
                 <div className="addProps_DiplayFlex addProps_SpaceBtw mar-top">
-                    <div>
-                        <div className="margin_bottom">
-                           <span className="add_image_props">Upload Images of property</span>
-                        </div>
+                        <div>
+                            <div className="margin_bottom">
+                                <span className="add_image_props">Upload Images of property</span>
+                            </div>
                             <div>
                                 <input type="file" id="file" accept="image/*" />
                                 <label htmlFor="file">
