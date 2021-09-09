@@ -38,6 +38,7 @@
     padding-bottom: 64px !important;
     box-sizing: inherit;
 }
+
 .section_box_two{
     background-image:url(../Images/patterns.svg),url(../Images/topppaterns.svg);
     background-position: right bottom, right top;
